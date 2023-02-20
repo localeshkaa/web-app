@@ -1,0 +1,43 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> {% block title %}{% endblock %} </title>
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+
+
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/rocket-312767.svg' %}" alt="Лого" class="d-inline-block align-text-bottom">
+        <span class="logo">НПО Энергомаш</span>
+        <h3>Навигация</h3>
+        <ul>
+
+            <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="{% static 'main/img/rocket-312767.svg' %}" alt="Logo" width="30" height="24">
+                      Главная
+                    </a>
+                  </div>
+            </nav>
+            <span class="badge rounded-pill"><a href=""><li> Главная</li></a>   </span>
+            <a href=""><li> Главная</li></a>
+
+            <a href=""><li> Контакты</li></a>
+
+            <a href=""><li> ...</li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
