@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, FileResponse
+from .models import UserForm
 
 # Create your views here.
 
@@ -18,5 +19,18 @@ def graphs(request):
 
 def view_pdf(request):
     return render(request, 'webneuro/main/static/main/img/file_test.pdf')
+
+
+
+
+
+def data_in(request):
+    if request.method == "POST":
+        name = request.POST.get("name")
+        age = request.POST.get("age")
+        return HttpResponse(f"<h2>Привет, {name}, твой возраст: {age}</h2>")
+    else:
+        userform = UserForm()
+        return render(request, "model.html", {"form": userform})
 
 

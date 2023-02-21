@@ -1,3 +1,7 @@
 from django.db import models
+from django import forms
 
-# Create your models here.
+
+class UserForm(forms.Form):
+    name = forms.CharField()
+    age = forms.IntegerField()
