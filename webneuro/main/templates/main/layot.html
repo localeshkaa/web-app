@@ -8,7 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> {% block title %}{% endblock %} </title>
     <link rel="stylesheet" href="{% static 'main/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'main/fontawesome/css/all.min.css' %}">
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="icon" href="{% static 'main/img/shuttle.png' %}" type="image/x-icon">
 
 
 </head>
@@ -16,23 +18,17 @@
     <aside>
         <img src="{% static 'main/img/rocket-312767.svg' %}" alt="Лого">
         <span class="logo">НПО Энергомаш</span>
-        <h3>Навигация</h3>
+        <h3>Информация</h3>
         <ul>
+            <a href="./static/main/img/file_test.pdf" target="_blank"><li><i class="fas fa-home"></i><strong> Главная</strong></li></a>
 
-            <nav class="navbar bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                      <img src="{% static 'main/img/rocket-312767.svg' %}" alt="Logo" width="30" height="24">
-                      Главная
-                    </a>
-                  </div>
-            </nav>
-            <span class="badge rounded-pill"><a href=""><li> Главная</li></a>   </span>
-            <a href=""><li> Главная</li></a>
+            <a href="{% url 'about' %}"><li><i class="fas fa-address-card"></i><strong> Контакты</strong></li></a>
 
-            <a href=""><li> Контакты</li></a>
+            <a href="./static/main/img/file_test.pdf" target="_blank"><li><i class="fa-solid fa-atom"></i><strong> Нейросетевое моделирование</strong></li></a>
 
-            <a href=""><li> ...</li></a>
+            <a href="{% url 'home' %}"><li><i class="fas fa-paper-plane"></i> ...</li></a>
+
+
         </ul>
     </aside>
     <main>

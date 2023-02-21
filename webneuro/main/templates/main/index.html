@@ -3,6 +3,17 @@
 {% block title %}Главная страница{% endblock %}
 
 {% block content %}
-    <h1>Главная страница</h1>
-    <p>О нас</p>
+    <div class="features">
+        <h1>Добро Пожаловать!</h1>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a href="{% url 'neuro' %}"><button class="btn btn-warning" type="button"><strong>Нейросетевое моделирование</strong></button></a>
+            <a href="{% url 'graphs' %}"><button class="btn btn-warning" type="button"><strong>Построение графиков</strong></button></a>
+        </div>
+<!--        <ul>-->
+<!--            <a href="{% url 'neuro' %}"><li><button style="" class="btn btn-warning">Нейросетевое моделирование</button></li></a>-->
+
+<!--            <a href="{% url 'graphs' %}"><li><button class="btn btn-warning">Построение графиков</button></li></a>-->
+<!--        </ul>-->
+    </div>
+
 {% endblock %}
