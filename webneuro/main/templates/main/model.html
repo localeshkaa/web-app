@@ -1,0 +1,15 @@
+{% extends './layout.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1> Контакты</h1>
+        <p>По всем вопросам обращаться по телефону:</p>
+        <ul>
+            <li>8-(915)-139-28-09</li>
+            <li>34-02</li>
+        </ul>
+        <a  href="{% url 'home' %}"> <button class="btn btn-danger">Назад</button></a>
+    </div>
+{% endblock %}

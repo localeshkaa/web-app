@@ -1,0 +1,25 @@
+{% extends './layout.html' %}
+
+{% block title %}Построение графиков{% endblock %}
+{% block content %}
+    <p>
+        <div class="features">
+            <h1>Построение графиков</h1>
+            <a  href="{% url 'home' %}"> <button class="btn btn-danger">Вернуться на главую страницу</button></a>
+        </div>
+    </p>
+    <p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Флажок по умолчанию
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Выбранный флажок
+          </label>
+        </div>
+    </p>
+{% endblock %}
