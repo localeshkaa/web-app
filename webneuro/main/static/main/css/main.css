@@ -67,10 +67,16 @@ main .features ul{list-style: none}
 
 main .features li{list-style: none}
 
-main .form-check{
-    list-style: none;
-    float: right;
-    color: #fff;
-    margin-top: 50px;
-    font-size: 20px;
+
+main .features form {
+    color: white;
+    margin: 20px auto;
+
+}
+main .features p1 {
+    margin: 20px;
+    padding: 20px;
+}
+main .features label {
+
 }

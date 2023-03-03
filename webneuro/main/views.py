@@ -31,6 +31,6 @@ def data_in(request):
         return HttpResponse(f"<h2>Привет, {name}, твой возраст: {age}</h2>")
     else:
         userform = UserForm()
-        return render(request, "model.html", {"form": userform})
+        return render(request, "contact-info.html", {"form": userform})
 
 

@@ -8,6 +8,21 @@
             <a  href="{% url 'home' %}"> <button class="btn btn-danger">Вернуться на главую страницу</button></a>
         </div>
     </p>
+    <p>
+        <div class="features">
+            <form>
+                <fieldset>
+                    <legend>Введите значения</legend>
+                    <p1><label for="DGDK">ДГДК</label><input type="text" id="DGDK"></p1>
+                    <p1><label for="Km">Км</label><input type="text" id="Km"></p1>
+                    <p1><label for="OTDG">ОТДГ</label><input type="text" id="OTDG"></p1>
+                    <p1><label for="DODG">ДОДГ</label><input type="text" id="DODG"></p1>
+                    <p1><label for="DKJK">ДКЖК</label><input type="text" id="DKJK"></p1>
+                    <p><button class="btn btn-primary" type="submit">Начать анализ</button></p>
+                </fieldset>
+            </form>
+        </div>
+    </p>
 
 
 {% endblock %}
